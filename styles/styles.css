@@ -44,6 +44,11 @@ a {
     text-decoration: none;
     color: var(--black-color-);
 }
+
+.header-list li a.active-about {
+   border-bottom: 3px solid var(--black-color);
+}
+
 /*HEADER*/
 
 /*MAIN*/
@@ -98,7 +103,12 @@ a {
     height: 524px;
     border-radius: 600px;
     background-color: var(--color-p);
+    background-image: url(../img/preview-matue-rappers-brazil-brazilian-singers-matheus-brasileiro-aguiar-render-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
 
 /*SECTION 1*/
 
