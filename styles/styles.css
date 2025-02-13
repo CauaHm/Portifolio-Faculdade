@@ -46,10 +46,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 68px;
 }
 
 .about-infos {
-    width: 50%;
+    width: 588px;
     gap: 32px;
 }
 
@@ -81,7 +82,7 @@ a {
 
 
 .about-img {
-    width: 50%;
+    width: 524px;
 }
 
 .ball {
