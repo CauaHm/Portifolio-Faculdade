@@ -5,16 +5,21 @@
 
 /*RESETS E VARIAVEIS*/
 :root {
-    --color-p: #FDC435;
     --black-color: #25282B;
     --black-light: #333333;
     --text-color: #828282;
     --white: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--black-color-);
     overflow-x: hidden;
+    background-image: linear-gradient(to right, #F9FAFF, rgba(196, 116, 196, 0.719));
+    background-color: #F9FAFF;
 }
 /*RESETS E VARIAVEIS*/
 
@@ -45,8 +50,10 @@ a {
     color: var(--black-color-);
 }
 
-.header-list li a.active-about {
-   border-bottom: 3px solid var(--black-color);
+.header-list a:hover {
+    border-bottom: 2px solid var(--black-color);
+    transition: .1s;
+    font-weight: bolder;
 }
 
 /*HEADER*/
@@ -65,6 +72,8 @@ a {
 .about-infos {
     width: 588px;
     gap: 32px;
+    padding: 20px;
+    border-radius: 24px 0 0 24px;
 }
 
 .about-infos h1 {
@@ -81,9 +90,9 @@ a {
 }
 
 .btn {
-    color: var(--black-color);
+    color: var(--white);
     font-family: "Roboto", serif;
-    background-color: var(--color-p);
+    background-color: var(--black-color);
     padding: 8px 24px;
     border-radius: 8px;
     border: none;
@@ -91,6 +100,14 @@ a {
     height: 43px;
     width: 114px;
     font-weight: bold;
+}
+
+.btn2 {
+    color: var(--black-color);
+    background-color: var(--white);
+    border: 1px solid var(--black-color);
+    margin-left: 12px;
+
 }
 
 
@@ -102,17 +119,69 @@ a {
     width: 524px;
     height: 524px;
     border-radius: 600px;
-    background-color: var(--color-p);
+    background-color: var(--black-color);
     background-image: url(../img/preview-matue-rappers-brazil-brazilian-singers-matheus-brasileiro-aguiar-render-removebg-preview.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
+.img {
+    width: 524px;
+    height: 524px;
+}
+
 
 /*SECTION 1*/
 
-/*SECTION 2*/ 
+/*SECTION 2*/
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 144px;
+}
+
+.section-projects h2 {
+    color: var(--black-color);
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 48px;
+    border-bottom: 5px solid var(--black-color);
+    border-radius: 2px;
+    gap: 32px;
+}
+
+.container-projects {
+    display: flex;
+}
+
+.projects-infos {
+    background-color: var(--white);
+    padding: 100px;
+}
+
+.btn3 {
+    background-color: var(--white);
+    color: var(--black-color);
+    border: 1px solid var(--black-color);
+    border-radius: 24px ;
+    width: 180px;
+    height: 43px;
+    padding: 8px 24px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.projects-img {
+    background-color: var(--black-color);
+    border-radius: 0 24px 24px 0;
+    padding: 100px;
+}
+/*SECTION2*/
+
+/*SECTION 3*/ 
 
 .about-projects {
     width: 100%;
@@ -129,7 +198,7 @@ a {
     font-family: "Playfair Display", serif;
     font-weight: bold;
     font-size: 48px;
-    border-bottom: 5px solid var(--color-p);
+    border-bottom: 5px solid var(--black-color);
     border-radius: 2px;
 }
 
@@ -173,7 +242,7 @@ a {
 
 /*FORM*/
 
-/*SECTION 2*/ 
+/*SECTION 3*/ 
 
 /*MAIN*/
 
