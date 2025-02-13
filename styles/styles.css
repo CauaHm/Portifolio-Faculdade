@@ -13,6 +13,7 @@
 
 body {
     color: var(--black-color-);
+    overflow-x: hidden;
 }
 
 .header {
@@ -67,7 +68,7 @@ a {
     font-family: "Nunito", serif;
 }
 
-.about-infos button {
+.btn {
     color: var(--black-color);
     font-family: "Roboto", serif;
     background-color: var(--color-p);
@@ -99,10 +100,22 @@ a {
     align-items: center;
     flex-direction: column;
     gap: 24px;
+    text-align: center;
+}
+
+.about-projects h2 {
+    color: var(--black-color);
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 48px;
+    border-bottom: 5px solid var(--color-p);
+    border-radius: 2px;
 }
 
 .projects-form {
     display: flex;
+    width: 400px;
+    min-height: 445px;
     flex-direction: column;
     gap: 24px;
 }
@@ -117,5 +130,41 @@ a {
 .projects-form span label {
     color: var(--black-color);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: "Nunito", serif;
 }
+
+.projects-form span input, textarea {
+    border: none;
+    outline: none;
+    border: 1px solid #E8ECF4;
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px;
+}
+
+.btn-send {
+    justify-self: end;
+    align-self: flex-end;
+}
+
+.footer-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+    font-family: "Nunito", serif;
+    margin-top: 136px;
+}
+
+.footer-about ul {
+    display: flex;
+    gap: 24px;
+}
+
+.p-footer  {
+    color: #828282;
+}
+
