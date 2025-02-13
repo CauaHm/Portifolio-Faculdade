@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*RESETS E VARIAVEIS*/
 :root {
     --color-p: #FDC435;
     --black-color: #25282B;
@@ -15,6 +16,9 @@ body {
     color: var(--black-color-);
     overflow-x: hidden;
 }
+/*RESETS E VARIAVEIS*/
+
+/*HEADER*/
 
 .header {
     font-family: "Comfortaa", serif;
@@ -40,7 +44,10 @@ a {
     text-decoration: none;
     color: var(--black-color-);
 }
+/*HEADER*/
 
+/*MAIN*/
+/*SECTION 1*/ 
 .section-about {
     width: 100%;
     margin: 0 120px;
@@ -93,6 +100,10 @@ a {
     background-color: var(--color-p);
 }
 
+/*SECTION 1*/
+
+/*SECTION 2*/ 
+
 .about-projects {
     width: 100%;
     display: flex;
@@ -111,6 +122,8 @@ a {
     border-bottom: 5px solid var(--color-p);
     border-radius: 2px;
 }
+
+/*FORM*/ 
 
 .projects-form {
     display: flex;
@@ -148,6 +161,14 @@ a {
     align-self: flex-end;
 }
 
+/*FORM*/
+
+/*SECTION 2*/ 
+
+/*MAIN*/
+
+/*FOOTER*/
+
 .footer-about {
     display: flex;
     justify-content: center;
@@ -167,4 +188,6 @@ a {
 .p-footer  {
     color: #828282;
 }
+
+/*FOOTER*/
 
