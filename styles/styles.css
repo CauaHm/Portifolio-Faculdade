@@ -160,9 +160,20 @@ a {
 /*SECTION 2*/
 
 .section-projects {
+    margin: 44px auto;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     flex-direction: column;
-    margin-bottom: 144px;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 496px;
+    height: 524px;
 }
 
 .section-projects h2 {
@@ -179,9 +190,53 @@ a {
     display: flex;
 }
 
+.manual-nav {
+    position: absolute;
+    width: 800px;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.manual-btn {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 1000;
+}
+
+.manual-btn:not(:last-child)  {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: var(--black-color);
+}
+
+.manual-nav input:hover {
+    background-color: var(--black-color);
+}
+
+#radio1:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -275%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+
 .projects-infos {
     background-color: var(--white);
-    padding: 100px;
+    padding: 50px;
+    width: 496px;
+    height: 524px;
 }
 
 .btn3 {
@@ -205,6 +260,8 @@ a {
 .projects-img {
     background-color: var(--black-color);
     border-radius: 0 24px 24px 0;
+    width: 496px;
+    height: 524px;
 }
 /*SECTION2*/
 
