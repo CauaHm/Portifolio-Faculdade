@@ -111,12 +111,26 @@ a {
     font-weight: bold;
 }
 
+.btn:hover {
+    color: var(--black-color);
+    background-color: var(--white);
+    border: 1px solid var(--black-color);
+    font-weight: bolder;
+    transition: .2s;
+}
+
 .btn2 {
     color: var(--black-color);
     background-color: var(--white);
     border: 1px solid var(--black-color);
     margin-left: 12px;
 
+}
+
+.btn2:hover {
+    color: var(--white);
+    background-color: var(--black-color);
+    transition: .2s;
 }
 
 
@@ -180,7 +194,12 @@ a {
     padding: 8px 24px;
     font-size: 18px;
     font-weight: 500;
+}
 
+.btn3:hover {
+    background-color: var(--black-color);
+    color: var(--white);
+    transition: .2s;
 }
 
 .projects-img {
