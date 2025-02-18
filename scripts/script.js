@@ -1,5 +1,5 @@
 let index = 0;
-const slides = document.querySelector('.slide');
+const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
 
 const mostrarSlide = (n) => {
@@ -9,17 +9,17 @@ const mostrarSlide = (n) => {
         index = totalSlides - 1 // vai para o ultimo slide
     }
 
-    const offset = -index * 100 //movimenta para a posição correta do slide
+    const offset = -index * 35.85 //movimenta para a posição correta do slide
     document.querySelector('.container-projects').style.transform = `translateX(${offset}%)`;
 }
 
 document.querySelector('.prev').addEventListener('click', () => {
     index--;
-    showSlide(index);
+    mostrarSlide(index);
   });
   
   // Navegar para o próximo slide
   document.querySelector('.next').addEventListener('click', () => {
     index++;
-    showSlide(index);
+    mostrarSlide(index);
   });
