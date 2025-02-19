@@ -143,7 +143,7 @@ a {
     height: 524px;
     border-radius: 600px;
     background-color: var(--black-color);
-    background-image: url(../img/preview-matue-rappers-brazil-brazilian-singers-matheus-brasileiro-aguiar-render-removebg-preview.png);
+    background-image: url(../publics/img/preview-matue-rappers-brazil-brazilian-singers-matheus-brasileiro-aguiar-render-removebg-preview.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -160,20 +160,9 @@ a {
 /*SECTION 2*/
 
 .section-projects {
-    margin: 44px auto;
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
     flex-direction: column;
-    position: relative;
-}
-
-.slides {
-    display: flex;
-    width: 496px;
-    height: 524px;
+    margin-bottom: 144px;
 }
 
 .section-projects h2 {
@@ -188,55 +177,13 @@ a {
 
 .container-projects {
     display: flex;
-}
-
-.manual-nav {
-    position: absolute;
-    width: 800px;
-    top: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 1000;
-}
-
-.manual-btn {
-    border: 2px solid red;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .5s;
-    z-index: 1000;
-}
-
-.manual-btn:not(:last-child)  {
-    margin-right: 40px;
-}
-
-.manual-btn:hover {
-    background-color: var(--black-color);
-}
-
-.manual-nav input:hover {
-    background-color: var(--black-color);
-}
-
-#radio1:checked ~ .first {
-    margin-left: -25%;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -275%;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -200%;
+    transition: transform 0.5s ease-in-out;
+    gap: 300px;
 }
 
 .projects-infos {
     background-color: var(--white);
-    padding: 50px;
-    width: 496px;
-    height: 524px;
+    padding: 100px;
 }
 
 .btn3 {
@@ -255,14 +202,48 @@ a {
     background-color: var(--black-color);
     color: var(--white);
     transition: .2s;
+    width: 50%;
 }
 
 .projects-img {
     background-color: var(--black-color);
     border-radius: 0 24px 24px 0;
-    width: 496px;
-    height: 524px;
+    width: 50%;
 }
+
+.carrossel {
+    display: flex;
+    overflow: hidden;
+    width: 1110px;
+    position: relative;
+    
+}
+
+.slide {
+    display: flex;
+    max-width: 1110px;
+}
+
+.btnCarrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
 /*SECTION2*/
 
 /*SECTION 3*/ 
@@ -353,3 +334,4 @@ a {
 }
 
 /*FOOTER*/
+
