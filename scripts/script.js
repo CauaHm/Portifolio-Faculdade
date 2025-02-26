@@ -23,3 +23,8 @@ document.querySelector('.prev').addEventListener('click', () => {
     index++;
     mostrarSlide(index);
   });
+
+  setInterval(()=>{
+    index++;
+    mostrarSlide(index);
+  }, 4000)
